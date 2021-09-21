@@ -11,8 +11,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-The main R file for analyzing hotel_bookings dataset
-In this project we will be investigating about questions regarding about the cheapest time to travel
+**The main R file for analyzing hotel_bookings dataset**
+In this project we will be investigating about questions regarding about:
+1. The cheapest time to book a hotel  
+2. Optimal length of stay at a hotel   
+3. Do the prices of hotel differ between different countries  
+3.5. If so, which country offers the most expensive hotels  
+
+TBC.
 
 ```{r read dataset and import libraries}
 library(tidyverse)
@@ -22,11 +28,15 @@ hotel_bookings <- read.csv("~/Documents/GitHub/jonathankang830/R_Projects_self/h
 str(hotel_bookings)
 ```
 
-## Including Plots
+## Data Cleaning
 
-You can also embed plots, for example:
+Clean the data by
+  a) lubricate dates from chr to date format,  
+  b) replace null to 0,  
+  c) remove columns that may be unnecessary for our questions
+  
 
-```{r pressure, echo=FALSE}
+```{r clean}
 plot(pressure)
 ```
 
