@@ -37,6 +37,9 @@ Clean the data by
   
 
 ```{r clean}
+hotel_bookings_1 <- hotel_bookings %>% select(-agent, -company) %>%
+  lubridate::ymd(reservation_status_date)
+head(hotel_bookings_1)
 
 ```
 

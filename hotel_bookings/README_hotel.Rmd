@@ -13,6 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 All of these information are collected from the official Kaggle dataset website
 
+**SOURCE: https://www.kaggle.com/jessemostipak/hotel-booking-demand**
+
+**Dataset Information:**
+Hotel: Hotel (H1 = Resort Hotel or H2 = City Hotel)
+is_cancelled: Value indicating if the booking was canceled (1) or not (0)
+
+
 **Context**
 Have you ever wondered when the best time of year to book a hotel room is? Or the optimal length of stay in order to get the best daily rate? What if you wanted to predict whether or not a hotel was likely to receive a disproportionately high number of special requests?
 
