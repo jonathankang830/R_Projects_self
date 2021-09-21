@@ -1,0 +1,33 @@
+---
+title: "hotel_bookings_main"
+author: "Jonathan"
+date: "9/21/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+The main R file for analyzing hotel_bookings dataset
+In this project we will be investigating about questions regarding about the cheapest time to travel
+
+```{r read dataset and import libraries}
+library(tidyverse)
+library(ggplot2)
+
+hotel_bookings <- read.csv("~/Documents/GitHub/jonathankang830/R_Projects_self/hotel_bookings/hotel_bookings.csv")
+str(hotel_bookings)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
